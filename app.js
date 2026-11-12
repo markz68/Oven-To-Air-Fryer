@@ -5,7 +5,7 @@ const temp=$('temp'),time=$('time'),unit=$('unit');
 const defaultUnit=$('defaultUnit');
 const storedUnit=localStorage.getItem('ovenAirFryer.unit');
 if(storedUnit==='F'||storedUnit==='C'){unit.value=storedUnit;defaultUnit.value=storedUnit;temp.value=storedUnit==='C'?'200':'400';}
-function displayNumber(value){return Number.isInteger(value)?String(value):value.toFixed(1).replace(/\\.0$/,'');}
+function displayNumber(value){return Number.isInteger(value)?String(value):value.toFixed(1);}
 function calculate(){
   const t=Number(temp.value), m=Number(time.value);
   const valid=temp.value.trim()!==''&&time.value.trim()!==''&&Number.isFinite(t)&&Number.isFinite(m)&&t>0&&m>0&&t<=1000&&m<=1440;
