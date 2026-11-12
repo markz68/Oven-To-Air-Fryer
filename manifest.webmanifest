@@ -1,0 +1,1 @@
+{"name":"Oven to Air Fryer Calculator","short_name":"Air Fryer","description":"Convert oven cooking directions into air fryer estimates.","start_url":"./","scope":"./","display":"standalone","background_color":"#f2f5f3","theme_color":"#142d35","icons":[{"src":"./icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]}
