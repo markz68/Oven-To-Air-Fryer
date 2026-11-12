@@ -1,4 +1,4 @@
-const CACHE='oven-to-air-fryer-v1.0.0';
+const CACHE='oven-to-air-fryer-v1.1.0';
 const ASSETS=['./','./index.html','./styles.css','./app.js','./manifest.webmanifest','./icon.svg'];
 self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(ASSETS)).then(()=>self.skipWaiting()));});
 self.addEventListener('activate',event=>{event.waitUntil((async()=>{for(const key of await caches.keys())if(key.startsWith('oven-to-air-fryer-')&&key!==CACHE)await caches.delete(key);await self.clients.claim();})());});
