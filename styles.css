@@ -1,1 +1,45 @@
 :root{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#17313a;background:#f2f5f3;font-synthesis:none}*{box-sizing:border-box}body{margin:0}button,input,select{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible{outline:3px solid #e79e4c;outline-offset:2px}.app{max-width:720px;margin:auto;min-height:100vh}.topbar{background:#142d35;color:#fff;padding:18px 20px;display:flex;justify-content:space-between;align-items:center;gap:12px}.brand{display:flex;align-items:center;gap:12px}.brand-icon{background:#efb05a;border-radius:13px;width:44px;height:44px;display:grid;place-items:center;color:#142d35;font-size:29px}.brand h1{font-size:20px;margin:0;line-height:1.2}.brand p{font-size:12px;color:#c0d2d2;margin:4px 0 0}.version{font-variant-numeric:tabular-nums}.icon-button{border:0;border-radius:10px;background:#ffffff19;color:inherit;min-width:42px;min-height:42px;font-size:23px}main{padding:22px 18px 35px}.intro{margin-bottom:25px}.eyebrow{font-size:11px;letter-spacing:.15em;color:#b46d26;font-weight:800}.intro h2{font-size:clamp(25px,6vw,35px);letter-spacing:-.045em;line-height:1.12;margin:10px 0}.intro p{color:#63767b;font-size:15px;margin:0;line-height:1.5}.panel{border:1px solid #dbe4e1;background:white;padding:20px;border-radius:20px;box-shadow:0 5px 18px #122e3710;margin-bottom:16px}.sectionhead{display:flex;align-items:center;gap:10px;margin-bottom:22px}.sectionhead h3{font-size:17px;margin:0;letter-spacing:-.02em}.number{background:#e6f3ed;color:#24624b;border-radius:8px;padding:5px 9px;font-weight:800;font-size:12px}.fields{display:grid;grid-template-columns:1fr 1fr;gap:14px}label{display:block;font-size:13px;font-weight:700;margin-bottom:8px}.input-combo{display:flex;align-items:center;border:1px solid #c7d7d1;border-radius:12px;background:#fff;overflow:hidden}.input-combo:focus-within{box-shadow:0 0 0 2px #6caa96}.input-combo input{width:100%;min-width:0;border:0;outline:0;padding:14px 12px;font-size:23px;font-weight:700;color:#163e38}.input-combo select{border:0;border-left:1px solid #dce6e1;background:#f6f9f8;font-weight:700;padding:17px 8px;max-width:72px}.suffix{color:#667f79;font-weight:700;padding:0 14px}.text-button{color:#256451;border:0;background:none;padding:16px 0 0;font-size:13px;font-weight:700}.result-panel{background:#153e38;color:white;border:0}.result-panel .number{background:#366559;color:#e6f8f0}.result-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.metric{background:#ffffff13;padding:18px 14px;border-radius:13px;min-width:0}.metric-label{font-size:12px;color:#c3e0d5}.metric-value{font-size:clamp(25px,6vw,37px);font-weight:800;letter-spacing:-.045em;margin:8px 0;white-space:nowrap;font-variant-numeric:tabular-nums}.metric-note{color:#a9ccbd;font-size:12px}.check-tip{background:#ffffff13;border-radius:10px;padding:13px;color:#e7f6ee;font-size:13px;margin:16px 0 0}.error{color:#ffd9ca;font-weight:700}.tips{padding:6px 3px}.tips h3{font-size:17px;margin:12px 0 16px}.tip{display:flex;align-items:start;gap:13px;margin:13px 0}.tip span{width:30px;flex-shrink:0;text-align:center;font-size:20px;color:#28745c}.tip p{margin:0;font-size:14px;color:#52656a;line-height:1.5}.tip strong{color:#213c42}.safety{font-size:12px;line-height:1.6;color:#718186;padding-top:10px}footer{text-align:center;padding:20px;color:#82918f;font-size:12px}dialog{border:0;border-radius:18px;box-shadow:0 20px 80px #0005;max-width:470px;width:calc(100% - 30px);max-height:85vh;overflow:auto;color:#17313a;padding:22px}dialog::backdrop{background:#0b202db8}.dialog-head{display:flex;align-items:center;justify-content:space-between}.dialog-head h2{margin:0 0 12px}.dialog-head .icon-button{background:#edf2ef;color:#1a3d37}.setting-card{border-top:1px solid #e2eae5;padding:18px 0 8px}.setting-card h3{font-size:15px;margin:0 0 12px}.setting-card p{line-height:1.5;font-size:14px}.setting-card select{width:100%;padding:12px;border:1px solid #c7d7d1;border-radius:10px}.setting-card a{color:#236653}.small{font-size:12px!important;color:#68807b}.secondary-button{border:1px solid #b7cfc5;border-radius:10px;padding:10px 14px;background:#eaf4ef;color:#1e5947;font-weight:700}@media(max-width:395px){.fields{grid-template-columns:1fr}.metric{padding:14px 10px}.metric-value{font-size:27px}.panel{padding:16px}}@media(prefers-reduced-motion:no-preference){button{transition:filter .15s}button:hover{filter:brightness(.95)}}
+/* v1.1.0: compact phone-first calculator; desktop layout unchanged */
+[hidden]{display:none!important}
+@media(max-width:600px){
+  .topbar{padding:10px 14px;min-height:66px}
+  .brand{gap:9px}.brand-icon{width:38px;height:38px;border-radius:10px;font-size:24px}
+  .brand h1{font-size:18px}.brand p{margin-top:2px;font-size:11px}
+  .icon-button{min-width:42px;min-height:42px}
+  main{padding:10px 12px 22px}
+  .intro{display:none}
+  .panel{padding:13px 14px;border-radius:16px;margin-bottom:10px}
+  .sectionhead{gap:8px;margin-bottom:12px}
+  .sectionhead h3{font-size:15px}
+  .number{padding:3px 7px}
+  .fields{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:9px}
+  label{font-size:12px;margin-bottom:6px}
+  .input-combo{border-radius:10px;min-height:48px}
+  .input-combo input{font-size:21px;padding:9px 7px;min-width:0}
+  .input-combo select{padding:12px 3px;max-width:56px;font-size:14px}
+  .suffix{padding:0 8px;font-size:13px}
+  .text-button{padding:10px 0 0;font-size:12px}
+  .result-grid{gap:9px}
+  .metric{padding:11px 10px;border-radius:10px}
+  .metric-label{font-size:11px}
+  .metric-value{font-size:clamp(23px,6.2vw,34px);margin:5px 0}
+  .metric-note{font-size:11px}
+  .check-tip{margin-top:10px;padding:10px 11px;font-size:13px}
+  .tips{padding-top:8px}
+}
+@media(max-width:360px){
+  .topbar{padding:8px 10px}.brand h1{font-size:16px}
+  main{padding:8px 9px 20px}
+  .panel{padding:11px 10px}
+  .metric-value{font-size:23px}
+  .metric{padding:10px 7px}
+}
+@media(max-width:600px) and (max-height:700px){
+  .topbar{min-height:58px;padding-top:7px;padding-bottom:7px}
+  main{padding-top:8px}
+  .sectionhead{margin-bottom:8px}
+  .panel{padding-top:10px;padding-bottom:10px;margin-bottom:8px}
+  .text-button{padding-top:7px}
+  .metric{padding-top:8px;padding-bottom:8px}
+  .check-tip{margin-top:8px;padding:8px}
+}
