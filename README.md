@@ -2,11 +2,11 @@
 
 A lightweight, installable, offline-capable PWA that converts conventional-oven recipes into air-fryer starting estimates.
 
-**Version:** 1.0.0
+**Version:** 1.1.0
 
 ## Live app
 
-Once GitHub Pages is enabled: https://markz68.github.io/Oven-To-Air-Fryer/
+Live on GitHub Pages: https://markz68.github.io/Oven-To-Air-Fryer/
 
 ## How conversion works
 
@@ -25,7 +25,7 @@ Conversion rules adapted from [Inch Calculator's Oven to Air Fryer Conversion Ca
 - Instant recalculation; Fahrenheit and Celsius oven inputs
 - Device-local preference for default temperature unit
 - Reset and early-doneness guidance
-- Mobile-first responsive design
+- Compact mobile-first layout with side-by-side inputs and results, plus early-check time immediately below; detailed tips remain below the calculator\n- Mobile layout hides the introductory hero to prioritize no-scroll cooking information\n- Responsive desktop design retained
 - App version in title bar, settings dialog, and footer
 - Service worker for offline usage after first online load
 - Versioned cache and on-demand service worker update check
@@ -44,7 +44,7 @@ In the repository, open **Settings → Pages**. Under **Build and deployment**, 
 - `manifest.webmanifest`: installation metadata
 - `icon.svg`: app icon
 
-## Testing checklist
+## Testing checklist\n\nOn a typical Android phone, confirm both inputs, converted temperature, converted cooking time, and early-check reminder appear without scrolling. Smaller displays or large accessibility text may still require scrolling.\n
 
 1. Enter 400°F and 30 minutes: expect 375°F and 24 minutes.
 2. Enter 350°F and 15 minutes: expect 325°F and 12 minutes.
