@@ -1,5 +1,5 @@
 'use strict';
-const VERSION='1.0.0';
+const VERSION='1.1.0';
 const $=id=>document.getElementById(id);
 const temp=$('temp'),time=$('time'),unit=$('unit');
 const defaultUnit=$('defaultUnit');
