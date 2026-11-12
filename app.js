@@ -13,7 +13,7 @@ function calculate(){
   if(!valid)return;
   // Convert to Fahrenheit for the precise 25°F adjustment, then back to Celsius.
   const airTemp=unit.value==='F'?t-25:t-25*5/9;
-  const roundedTemp=unit.value==='F'?Math.round(airTemp/5)*5:Math.round(airTemp/5)*5;
+  const roundedTemp=Math.round(airTemp/5)*5;
   const airTime=Math.round(m*.8*10)/10;
   $('outTemp').textContent=displayNumber(roundedTemp)+'°'+unit.value;
   $('outTime').textContent=displayNumber(airTime)+' min';
